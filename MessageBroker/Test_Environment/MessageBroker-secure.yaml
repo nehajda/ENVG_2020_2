@@ -1,0 +1,28 @@
+srsServer:
+  https:
+    tls:
+      keyStore:
+        password-secure: "changeme"
+        key:
+          password-secure: "changeme"
+      trustStore:
+        password-secure: "changeme"     
+
+
+server: 
+  https:
+    tls:
+      keyStore:
+        password-secure: "changeme"
+        key:
+          password-secure: "changeme"
+      trustStore:
+        password-secure: "changeme"     
+
+
+
+mb:
+  pipe:
+    jms:
+      user-secure: "admin"
+      password-secure: "admin"
