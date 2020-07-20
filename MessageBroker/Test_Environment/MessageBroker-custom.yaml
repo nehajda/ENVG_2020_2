@@ -16,12 +16,9 @@ server:
     tls:
       keyStore:
         path: "keystore.jks"
-        
         key:
-          
       trustStore:
         path: "truststore.jks"
-             
   http:
     host: "0.0.0.0"
     port: "9911"
@@ -30,6 +27,7 @@ server:
 
 # ---------------------------------------------------------------------------------------------------------
 # Outbound Endpoint Properties
+
 # JMS inbound endpoint
 jmsInbound:
   queue:
@@ -55,6 +53,8 @@ jmsOutbound:
     redeliveryDelay: "20000"
     sessionCacheSize: "100"
     maximumRedeliveries: "5"
+
+
 
 # ---------------------------------------------------------------------------------------------------------
 # Interceptor Properties

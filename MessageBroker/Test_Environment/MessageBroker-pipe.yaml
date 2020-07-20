@@ -14,4 +14,4 @@ mb:
       initialRedeliveryDelay: "20000"
       redeliveryDelay: "20000"
       sessionCacheSize: "100"
-      maximumRedeliveries: "5"
+      maximumRedeliveries: "-1"

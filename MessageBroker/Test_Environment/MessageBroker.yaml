@@ -13,13 +13,13 @@ mb:
     traceMessage:
       enabled: "false"
   gs1ack:
-    generateAckError: "false"
-    generateAckSuccess: "false"
-    globalReceiverFlag: "false"
+    generateAckError: "true"
+    generateAckSuccess: "true"
+    globalReceiverFlag: "true"
     globalReceiverName: "ACK.GLOBAL"
   #The entryTtl for Idempotent Message Validator should be greater then the expirationInterval
   idempotentMsgValidator:
-    IdempotentMsgValidatorFlag: "true"
+    IdempotentMsgValidatorFlag: "false"
     maxEntries: "100"
     entryTtl: "4"
     expirationInterval: "2"
@@ -41,12 +41,9 @@ srsServer:
     tls:
       keyStore:
         path: "keystore.jks"
-        
         key:
-          
       trustStore:
         path: "truststore.jks"
-             
   http:
     host: "0.0.0.0"
     port: "9821"
