@@ -9,7 +9,7 @@ mb:
       name: "JMB1"
       basePath: "/srs/api/v1/"
     local:
-      fileName: "configuration/srs-config.yaml"
+      fileName: "configuration|srs-config.yaml"
     traceMessage:
       enabled: "false"
   gs1ack:
