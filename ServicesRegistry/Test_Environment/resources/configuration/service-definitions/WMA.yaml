@@ -3,8 +3,6 @@ name: WMA
 description: WM adapter for WMS
 inbound:
   requests:
-    - message: 'GS1:TransferOrder:GS1_JDA 2020.1.0'
-      flow: 'flow-in-transferOrder'
     - message: 'GS1:TransferOrder:GS1_JDA 2019.1.0'
       flow: 'flow-in-transferOrder'
     - message: 'GS1:TransferOrder:GS1_JDA 2017.2.0'
