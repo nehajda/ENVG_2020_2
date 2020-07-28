@@ -10,6 +10,8 @@ receiverMappings:
   service: 'ACK.GLOBAL'
 - receiver: 'LOC.*'
   service: 'WMA'
+- receiver: 'LCT.GLOBAL'
+  service: 'LCT.GLOBAL'
 jmbs:
 - JMB1
 services:
@@ -18,3 +20,4 @@ services:
 - OMS.GLOBAL
 - ACK.GLOBAL
 - WMA
+- LCT.GLOBAL
