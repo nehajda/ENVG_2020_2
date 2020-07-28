@@ -51,6 +51,7 @@
   <code-map name="TransportServiceCategoryCodeFromAppToGS1">
     <code key="TSM_RAIL" value="20"/>
     <code key="TSM_ROAD" value="30"/>
+    <code key="TSM_NULL" value="30"/>
     <code key="TSM_AIR" value="40"/>
     <code key="TSM_OCEAN" value="10"/>
   </code-map>
