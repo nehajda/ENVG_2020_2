@@ -44,11 +44,11 @@ services:
         #configType: https
         configType: http
         https:
-          port: "9932"
-          host: "in2npdvjdacon02"
+          port: "9937"
+          host: "localhost"
         http:    
-          port: "9931"
-          host: "in2npdvjdacon02"
+          port: "9938"
+          host: "localhost"
         path: /replayEndpoint
         basePath: /v2
         header:
