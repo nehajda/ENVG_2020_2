@@ -47,7 +47,7 @@ services:
           port: "9932"
           host: "in2npdvjdacon02"
         http:    
-          port: "9833"
+          port: "9933"
           host: "in2npdvjdacon02"
         path: /replayEndpoint
         basePath: /v2
