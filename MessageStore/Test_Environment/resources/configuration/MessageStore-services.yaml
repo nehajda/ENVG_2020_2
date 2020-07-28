@@ -44,7 +44,7 @@ services:
         configType: https
         #configType: http
         https:
-          port: "9930"
+          port: "9830"
           host: "in2npdvjdacon02.dev.corp.local"
         http:    
           port: "9831"
