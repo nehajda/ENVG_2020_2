@@ -4,13 +4,13 @@ services:
     # This policy allows for messages to be replayed more frequently in the beginning and less frequently over time
     replayPolicy:
       # Fixed positive number of retries. if -1 : infinite number of retries and if 0 : never retry
-      maxRetries: 6
+      maxRetries: 2
       # Period to wait before retrying in MINUTES
-      retryIntervalMins: 10 
+      retryIntervalMins: 1 
       # Multiplier (float) to apply to the retry-interval
       retryIntervalMultiplier: 1.5
       # Maximum value for retry-interval in MINUTES
-      maxRetryIntervalMins : 60
+      maxRetryIntervalMins : 1
   TMA-GLOBAL:
     type: TMA
     # overridden Replay Policy
@@ -37,18 +37,18 @@ services:
           client_id: "xx"
           client_secret: "xx"
       
-  WMA-GLOBAL:
+  WMA:
     type: WMA
     replay:
       request:
-        configType: https
-        #configType: http
+        #configType: https
+        configType: http
         https:
-          port: "9930"
-          host: "0.0.0.0"
+          port: "9937"
+          host: "localhost"
         http:    
-          port: "9831"
-          host: "0.0.0.0"
+          port: "9938"
+          host: "localhost"
         path: /replayEndpoint
         basePath: /v2
         header:
