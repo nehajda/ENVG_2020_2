@@ -21,8 +21,8 @@ services:
       maxRetryIntervalMins : 60
     replay:
       request:
-        configType: http
-        #configType: https
+        #configType: http
+        configType: https
         https:
           port: "9930"
           host: "0.0.0.0"
