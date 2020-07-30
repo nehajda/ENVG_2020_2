@@ -51,7 +51,7 @@ services:
         configType: https
         https:
           port: "9932"
-          host: "0.0.0.0"
+          host: "localhost"
         http:    
           port: "9931"
           host: "localhost"
