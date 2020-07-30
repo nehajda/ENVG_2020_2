@@ -37,17 +37,17 @@ services:
           client_id: "xx"
           client_secret: "xx"
       
-  WMA:
+  WMA-GLOBAL:
     type: WMA
     replay:
       request:
         #configType: https
         configType: http
         https:
-          port: "9937"
+          port: "9932"
           host: "localhost"
         http:    
-          port: "9938"
+          port: "9931"
           host: "localhost"
         path: /replayEndpoint
         basePath: /v2
