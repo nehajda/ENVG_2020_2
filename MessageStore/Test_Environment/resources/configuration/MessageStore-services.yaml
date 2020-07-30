@@ -39,13 +39,19 @@ services:
       
   WMA-GLOBAL:
     type: WMA
+    # overridden Replay Policy
+    replayPolicy:
+      maxRetries: -1
+      retryIntervalMins: 10 
+      retryIntervalMultiplier: 0.5
+      maxRetryIntervalMins : 60
     replay:
       request:
         #configType: https
         configType: https
         https:
           port: "9932"
-          host: "localhost"
+          host: "0.0.0.0"
         http:    
           port: "9931"
           host: "localhost"
