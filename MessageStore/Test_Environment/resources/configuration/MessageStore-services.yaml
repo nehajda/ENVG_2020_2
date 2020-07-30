@@ -45,10 +45,10 @@ services:
         configType: http
         https:
           port: "9250"
-          host: "in2npdvjdacon02"
+          host: "localhost"
         http:    
           port: "9251"
-          host: "in2npdvjdacon02"
+          host: "localhost"
         path: /replayEndpoint
         basePath: /v2
         header:
