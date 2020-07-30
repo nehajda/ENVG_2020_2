@@ -37,7 +37,7 @@ services:
           client_id: "xx"
           client_secret: "xx"
       
-  WMA-GLOBAL:
+  WMA:
     type: WMA
     replay:
       request:
