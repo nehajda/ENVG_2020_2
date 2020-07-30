@@ -42,13 +42,13 @@ services:
     replay:
       request:
         #configType: https
-        configType: http
+        configType: https
         https:
-          port: "9250"
-          host: "0.0.0.0"
+          port: "9932"
+          host: "localhost"
         http:    
-          port: "9251"
-          host: "0.0.0.0"
+          port: "9931"
+          host: "localhost"
         path: /replayEndpoint
         basePath: /v2
         header:
