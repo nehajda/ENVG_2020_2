@@ -39,22 +39,16 @@ services:
       
   WMA-GLOBAL:
     type: WMA
-    # overridden Replay Policy
-    replayPolicy:
-      maxRetries: -1
-      retryIntervalMins: 10 
-      retryIntervalMultiplier: 0.5
-      maxRetryIntervalMins : 60
     replay:
       request:
         #configType: https
         configType: https
         https:
           port: "9932"
-          host: "IN2NPDVJDACON02.dev.corp.local"
+          host: "localhost"
         http:    
           port: "9931"
-          host: "IN2NPDVJDACON02.dev.corp.local"
+          host: "localhost"
         path: /replayEndpoint
         basePath: /v2
         header:
