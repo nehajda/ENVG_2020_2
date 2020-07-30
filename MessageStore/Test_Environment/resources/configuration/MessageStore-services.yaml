@@ -37,12 +37,12 @@ services:
           client_id: "xx"
           client_secret: "xx"
       
-  WMA:
+  WMA-GLOBAL:
     type: WMA
     replay:
       request:
         #configType: https
-        configType: https
+        configType: http
         https:
           port: "9932"
           host: "localhost"
