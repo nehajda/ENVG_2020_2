@@ -1,6 +1,6 @@
 #MSDatabase:
-  #user-secure: "test"
-  #password-secure: "test"
+  user-secure: "MSGSTR_GOLD_02"
+  password-secure: "MSGSTR_GOLD_02"
 
 server:
 
