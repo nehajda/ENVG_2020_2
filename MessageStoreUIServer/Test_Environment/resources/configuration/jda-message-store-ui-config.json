@@ -1,0 +1,37 @@
+{
+  "base-url": "https://in2npdvjdacon02.dev.corp.local:8085/services/",
+  "ms-base-url": "messagestore/api/v3/",
+  "std-http-headers": {
+    "Content-Type": "application/json",
+    "client_id": "xx",
+    "client_secret": "xx",
+    "Accept": "application/json"
+  },
+  "session-timeout": 300,
+  "replay-tabs-allowed": 5,
+  "search-tabs-allowed": 5,
+  "auth-provider" : "basic-auth",
+  "adalConfig": {
+    "config": {
+      "auth": {
+        "clientId": "xxxxxxxxxxxxx",
+        "authority": "https://xxxxxxx.b2clogin.com/xxxxxxx.onmicrosoft.com/b2c_1a_signin",
+        "validateAuthority": false,
+        "redirectUri": "http://localhost:4200/liam-auth/",
+        "postLogoutRedirectUri": "http://localhost:4200/",
+        "navigateToLoginRequestUrl": true
+      },
+      "cache": {
+        "cacheLocation": "sessionStorage",
+        "storeAuthStateInCookie": false
+      }
+    },
+    "angularConfig": {
+      "popUp": false,
+      "consentScopes": ["https://xxxxx.onmicrosoft.com/xxxxx3-cadd1e704af5/access" ],
+      "unprotectedResources": ["http://localhost:9831/messagestore/api/v3.2/"],
+      "protectedResourceMap" : [],
+      "extraQueryParameters": {}
+    }
+  }
+}
