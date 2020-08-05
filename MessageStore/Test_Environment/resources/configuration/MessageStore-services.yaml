@@ -4,7 +4,7 @@ services:
     # This policy allows for messages to be replayed more frequently in the beginning and less frequently over time
     replayPolicy:
       # Fixed positive number of retries. if -1 : infinite number of retries and if 0 : never retry
-      maxRetries: 2
+      maxRetries: 6
       # Period to wait before retrying in MINUTES
       retryIntervalMins: 1 
       # Multiplier (float) to apply to the retry-interval
@@ -39,12 +39,17 @@ services:
       
   WMA-GLOBAL:
     type: WMA
+    replayPolicy:
+      maxRetries: 6
+      retryIntervalMins: 1 
+      retryIntervalMultiplier: 0.5
+      maxRetryIntervalMins : 1
     replay:
       request:
         #configType: https
         configType: http
         https:
-          port: "9932"
+          port: "9930"
           host: "in2npdvjdacon01.dev.corp.local"
         http:    
           port: "9931"
