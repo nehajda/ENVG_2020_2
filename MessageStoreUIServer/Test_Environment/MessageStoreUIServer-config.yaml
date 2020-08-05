@@ -51,7 +51,7 @@ MSDatabase:
   driverClassName: "oracle.jdbc.driver.OracleDriver"
   reconnectionAttempts: "1"
       
-  #connection:
+  connection:
     maxPoolSize: "30"
     minPoolSize: "10"
     preparedStatementCacheSize: "10"
