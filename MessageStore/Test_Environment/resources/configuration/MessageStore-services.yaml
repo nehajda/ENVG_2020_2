@@ -52,7 +52,7 @@ services:
           port: "9930"
           host: "in2npdvjdacon01.dev.corp.local"
         http:    
-          port: "8085"
+          port: "9931"
           host: "in2npdvjdacon01.dev.corp.local"
         path: /replayEndpoint
         basePath: /v2
