@@ -58,6 +58,6 @@ services:
         basePath: /v2
         header:
           Accept: "application/json"
-          Content-Type: "application/json"
+          ContentType: "application/json"
           client_id: "xx"
           client_secret: "xx"
