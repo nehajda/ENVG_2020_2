@@ -15,20 +15,20 @@ services:
     type: TMA
     # overridden Replay Policy
     replayPolicy:
-      maxRetries: -1
-      retryIntervalMins: 10 
+      maxRetries: 2
+      retryIntervalMins: 1 
       retryIntervalMultiplier: 0.5
-      maxRetryIntervalMins : 60
+      maxRetryIntervalMins : 1
     replay:
       request:
-        #configType: http
-        configType: https
+        configType: http
+        #configType: https
         https:
-          port: "9930"
-          host: "0.0.0.0"
+          port: "9932"
+          host: "in2npdvjdacon02.dev.corp.local"
         http:    
-          port: "8934"
-          host: "localhost"
+          port: "9933"
+          host: "in2npdvjdacon02.dev.corp.local"
         path: /replayEndpoint
         basePath: /v2
         header:
