@@ -2,4 +2,4 @@
 name: LCT-2020.2.0
 description: LCT
 requests:
-- 'GS1:transportChainMessage:GS1_JDA 2020.1.0.1'
+- 'GS1:transportChainMessage:GS1_JDA 2020.1.0.2'
