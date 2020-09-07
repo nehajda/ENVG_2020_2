@@ -54,18 +54,6 @@
     <code key="TSM_NULL" value="30"/>
     <code key="TSM_AIR" value="40"/>
     <code key="TSM_OCEAN" value="10"/>
-    <code key="TSM_PARCEL" value="30"/>
-    <code key="TSM_TRUCKLOAD" value="30"/>
-    <code key="TSM_LTL" value="30"/>
-    <code key="TSM_USERDEFINED_1" value="30"/>
-    <code key="TSM_USERDEFINED_2" value="30"/>
-    <code key="TSM_USERDEFINED_3" value="30"/>
-    <code key="TSM_USERDEFINED_4" value="30"/>
-    <code key="TSM_USERDEFINED_5" value="30"/>
-    <code key="TSM_USERDEFINED_6" value="30"/>
-    <code key="TSM_USERDEFINED_7" value="30"/>
-    <code key="TSM_USERDEFINED_8" value="30"/>
-    <code key="TSM_USERDEFINED_9" value="30"/>
   </code-map>
   <code-map name="TransportServiceTransitModeFromAppToGS1">
     <code key="FTL" value="2"/>
