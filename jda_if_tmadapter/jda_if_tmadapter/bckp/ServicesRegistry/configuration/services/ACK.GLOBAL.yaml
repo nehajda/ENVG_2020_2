@@ -1,4 +1,0 @@
-!service-v1
-name: ACK.GLOBAL
-serviceDefinition: ACK-2019.1.0
-enabled: true
