@@ -47,6 +47,7 @@
     <code key="GROUND" value="GROUND"/>
     <code key="OVERNIGHT" value="NEXT_DAY_AIR"/>
     <code key="FTL" value="FTL"/>
+    <code key="RAIL" value="RAIL"/>
   </code-map>
   <code-map name="TransportServiceCategoryCodeFromAppToGS1">
     <code key="TSM_RAIL" value="20"/>
