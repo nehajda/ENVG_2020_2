@@ -1,6 +1,6 @@
---- 
-description: WMA
+!service-definition-v1
 name: WMA
+description: WMA
 requests: 
   - "GS1:TransferOrder:GS1_JDA 2020.1.0"
   - "GS1:TransferOrder:GS1_JDA 2019.1.0"
