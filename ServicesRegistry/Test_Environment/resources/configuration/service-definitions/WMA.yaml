@@ -35,6 +35,8 @@ inbound:
       flow: 'flow-in-despatchAdvice'
     - message: 'GS1:despatchAdviceMessage:GS1_JDA 2017.2.0'
       flow: 'flow-in-despatchAdvice'
+    - message: 'GS1:despatchAdviceMessage:GS1_JDA 2020.1.0'
+      flow: 'flow-in-despatchAdvice'
     - message: 'GS1:transportPickUpDropOffRequestMessage:GS1_JDA 2017.2.0'
       flow: 'flow-in-transportPickUpDropOffRequest'
     - message: 'GS1:locationMessage:GS1_JDA 2020.1.0'
