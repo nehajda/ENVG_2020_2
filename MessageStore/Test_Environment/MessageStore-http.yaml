@@ -3,8 +3,8 @@
 server:
   listener: 
   #Controls whether api endpoint accepts HTTP or HTTPS
-    config: "HTTPS_Listener_config"
-    #config: "HTTP_Listener_config"
+    #config: "HTTPS_Listener_config"
+    config: "HTTP_Listener_config"
     
   http:
     host: "0.0.0.0"
