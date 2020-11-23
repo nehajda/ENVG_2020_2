@@ -3,12 +3,12 @@
 server:
   listener: 
     #Controls whether api endpoint accepts HTTP or HTTPS
-    config: "HTTPS_Listener_config"
-    #config: "HTTP_Listener_config"
+    #config: "HTTPS_Listener_config"
+    config: "HTTP_Listener_config"
   requestor:
     #Controls whether request accepts HTTP or HTTPS
-    config: "HTTPS_Requestor_config"
-    #config: "HTTP_Requestor_config"
+    #config: "HTTPS_Requestor_config"
+    config: "HTTP_Requestor_config"
   http:
     host: "0.0.0.0"
     port: "8086"    
@@ -40,7 +40,7 @@ response:
       img_src:     "\"img-src 'self';\""
       frame_src:   "\"frame-src   ;\""
       # on which server it can make a connection request. it shoud contain self, liam and message store url only.
-      connect_src: "\"connect-src 'self' https://in2npdvjdacon02:9830 \""
+      connect_src: "\"connect-src 'self' http://in2npdvjdacon02:9831 \""
 
 
 # DataBase Config
@@ -63,11 +63,11 @@ queryTimeout: "500"
 MSserver:
   requester: 
   #Controls whether MS api endpoint accepts HTTP or HTTPS
-    config: "HTTPS_MS_Requester_config"
-    #config: "HTTP_MS_Requester_config"
+    #config: "HTTPS_MS_Requester_config"
+    config: "HTTP_MS_Requester_config"
     
   http:
-    host: "0.0.0.0"
+    host: "in2npdvjdacon02.dev.corp.local"
     port: "9831"
     
   https:
