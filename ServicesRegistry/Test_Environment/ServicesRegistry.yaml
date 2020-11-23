@@ -6,8 +6,8 @@ server:
   
   listener: 
   #Controls whether api endpoint accepts HTTP or HTTPS
-    config: "HTTPS_Listener_config"
-    #config: "HTTP_Listener_config"
+    #config: "HTTPS_Listener_config"
+    config: "HTTP_Listener_config"
     
   https:
     host: "0.0.0.0"
@@ -33,7 +33,7 @@ eframework:
     payload.transaction.size: 2048
 cps:
   useCps: "true"  # if false then CPS is not called and files are loaded locally
-  cpsBaseUrl: "https://in2npdvjdacon02.dev.corp.local:9810"
+  cpsBaseUrl: "http://in2npdvjdacon02.dev.corp.local:9811"
   applicationName: “ServicesRegistry”
   profiles: "*"
   version: "*"
