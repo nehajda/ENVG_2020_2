@@ -27,7 +27,7 @@ inbound:
       flow: 'flow-in-customerOrder'
     - message: 'GS1:OrderRelease:GS1_JDA 2017.2.0'
       flow: 'flow-in-customerOrder'
-    - message: 'GS1:ReturnOrder:GS1_JDA 2017.2.0'
+    - message: 'GS1:ReturnOrder:GS1_JDA 2019.1.0'
       flow: 'flow-in-returnOrder'
     - message: 'GS1:transportLoadMessage:GS1_JDA 2020.1.0'
       flow: 'flow-in-transportLoad'
