@@ -1,0 +1,47 @@
+# Properties relating to HTTP
+
+server:
+  listener: 
+    #Controls whether api endpoint accepts HTTP or HTTPS
+    config: "HTTPS_Listener_config"
+    #config: "HTTP_Listener_config"
+
+    #Controls whether request accepts only Keystore or with Truststore
+    context: "HTTPS_Listener_TLS_Context"
+    #context: "HTTPS_TLS_Context_with_Trust"
+
+  requestor:
+    #Controls whether request accepts HTTP or HTTPS
+    config: "HTTPS_Requestor_config"
+    #config: "HTTP_Requestor_config"
+
+    #Controls whether request accepts only Trustore or with keystore
+    context: "HTTPS_Requestor_TLS_Context"
+    #context: "HTTPS_TLS_Context_with_Trust"
+  http:
+    host: "0.0.0.0"
+    port: "8088"    
+    
+  https:
+    host: "0.0.0.0"
+    port: "8087"
+    tls:
+      keyStore:
+        path: "https/keystore.jks"
+      trustStore:
+        path: "https/truststore.jks"
+    
+webcontent:
+  path: "web"
+  
+response:
+  header:
+    content_security_policy:
+      #set the font src
+      font_src: "\" font-src 'self' https://fonts.gstatic.com/ data:; \""
+      # source of which script file can execute. we have to give only self and okta url as okta scripts will handle login and logout.
+      script_src:  "\"script-src 'self'  'unsafe-inline' 'unsafe-eval';\""
+      # source from where it can read the style file. add okta url also for login page styles.
+      style_src:   "\"style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.gstatic.com https://fonts.googleapis.com; \""
+      # from where it can load the images. it has to be self only.
+      img_src:     "\"img-src 'self';\""

@@ -1,0 +1,25 @@
+{
+  "config": {
+    "auth": {
+      "clientId": "a345c356-420f-4019-a037-e5119ac1ad50",
+      "authority": "https://jdacldsbxb2c.b2clogin.com/jdacldsbxb2c.onmicrosoft.com/b2c_1a_signin",
+      "validateAuthority": false,
+      "redirectUri": "https://in2npdvdcssv04.dev.corp.local:8087/",
+      "postLogoutRedirectUri": "https://in2npdvdcssv04.dev.corp.local:8087/",
+      "navigateToLoginRequestUrl": true
+    },
+    "cache": {
+      "cacheLocation": "localStorage",
+      "storeAuthStateInCookie": false
+    },
+    "reactConfig": {
+      "popUp": false,
+      "consentScopes": [
+        "https://jdacldsbxb2c.onmicrosoft.com/a8019956-0766-48dd-9d73-cadd1e704af5/access"
+      ],
+      "unprotectedResources": [],
+      "protectedResourceMap": [],
+      "extraQueryParameters": {}
+    }
+  }
+}
