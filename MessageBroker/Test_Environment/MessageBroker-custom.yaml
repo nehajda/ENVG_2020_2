@@ -31,6 +31,7 @@ server:
 # JMS inbound endpoint
 jmsInbound:
   queue:
+    name: MB_INBOUND
     brokerURL: "failover://tcp://in2npdvjdacon02:61616"
     user: "admin"
     password-secure: "admin"
