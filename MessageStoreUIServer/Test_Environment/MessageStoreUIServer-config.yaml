@@ -3,24 +3,34 @@
 server:
   listener: 
     #Controls whether api endpoint accepts HTTP or HTTPS
-    #config: "HTTPS_Listener_config"
-    config: "HTTP_Listener_config"
+    config: "HTTPS_Listener_config"
+    #config: "HTTP_Listener_config"
+
+    #Controls whether request accepts only Keystore or with Truststore
+    context: "HTTPS_Listener_TLS_Context"
+    #context: "HTTPS_TLS_Context_with_Trust"
+
   requestor:
     #Controls whether request accepts HTTP or HTTPS
-    #config: "HTTPS_Requestor_config"
-    config: "HTTP_Requestor_config"
+    config: "HTTPS_Requestor_config"
+    #config: "HTTP_Requestor_config"
+
+    #Controls whether request accepts only Trustore or with keystore
+    context: "HTTPS_Requestor_TLS_Context"
+    #context: "HTTPS_TLS_Context_with_Trust"
+
   http:
     host: "0.0.0.0"
     port: "8086"    
     
   https:
-    host: "0.0.0.0"
+    host: "IN2NPDVJDACON02.dev.corp.local"
     port: "8085"
     tls:
       keyStore:
-        path: "keystore.jks"
+        path: "https/keystore.jks"
       trustStore:
-        path: "truststore.jks"
+        path: "https/truststore.jks"
     
 webcontent:
   path: "web"
@@ -40,7 +50,7 @@ response:
       img_src:     "\"img-src 'self';\""
       frame_src:   "\"frame-src   ;\""
       # on which server it can make a connection request. it shoud contain self, liam and message store url only.
-      connect_src: "\"connect-src 'self' http://in2npdvjdacon02:9831 \""
+      connect_src: "\"connect-src 'self' <message-store-url> <liam-authority-url> <liam-scope-url>\""
 
 
 # DataBase Config
@@ -48,11 +58,11 @@ MSDatabase:
   # required field should be true if using basic Auth or else false.
   required: "true"
   url: "jdbc:oracle:thin:@in2npdlnxdb10:1521:if19ca"
-  driverClassName: "oracle.jdbc.driver.OracleDriver"
+  driverClassName: "oracle.jdbc.driver.OracleDriver""
   reconnectionAttempts: "1"
       
   connection:
-    maxPoolSize: "30"
+    maxPoolSize: "100"
     minPoolSize: "10"
     preparedStatementCacheSize: "10"
     maxWait: "10"
@@ -63,19 +73,22 @@ queryTimeout: "500"
 MSserver:
   requester: 
   #Controls whether MS api endpoint accepts HTTP or HTTPS
-    #config: "HTTPS_MS_Requester_config"
-    config: "HTTP_MS_Requester_config"
+    config: "HTTPS_MS_Requester_config"
+    #config: "HTTP_MS_Requester_config"
     
   http:
-    host: "in2npdvjdacon02.dev.corp.local"
+    host: "0.0.0.0"
     port: "9831"
     
   https:
-    host: "in2npdvjdacon02.dev.corp.local"
+    host: "IN2NPDVJDACON02.dev.corp.local"
     port: "9830"
     tls:
+      #Controls whether request accepts only Trustore or with keystore
+      context: "HTTPS_MS_Requester_TLS_Context"
+      #context: "HTTPS_MS_Requester_TLS_Context_with_Trust"
       keyStore:
-        path: "keystore.jks"
+        path: "https/keystore.jks"
       trustStore:
-        path: "truststore.jks"
+        path: "https/truststore.jks"
         

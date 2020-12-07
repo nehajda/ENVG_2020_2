@@ -29,7 +29,7 @@
     "angularConfig": {
       "popUp": false,
       "consentScopes": ["https://xxxxx.onmicrosoft.com/xxxxx3-cadd1e704af5/access" ],
-      "unprotectedResources": ["http://localhost:9831/messagestore/api/v3.2/"],
+      "unprotectedResources": ["http://localhost:9831/messagestore/api/v3/"],
       "protectedResourceMap" : [],
       "extraQueryParameters": {}
     }
