@@ -1,3 +1,17 @@
 {
-  "userConnections": [ ]
+  "userConnections": [
+    {
+      "username": "Srishti.Srivastava@blueyonder.com",
+      "connection": [
+        {
+          "connectionName": "CPS",
+          "protocol": "https",
+          "machineAddress": "localhost",
+          "portNumber": 9810,
+          "apiName": "cps/api",
+          "apiVersion": "v1"
+        }
+      ]
+    }
+  ]
 }
