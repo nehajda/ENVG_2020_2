@@ -10,7 +10,7 @@ server:
     #config: "HTTP_Listener_config"
     
   https:
-    host: "0.0.0.0"
+    host: "in2npdvjdacon02.dev.corp.local"
     port: "9820"
     tls:
       keyStore:
