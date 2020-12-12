@@ -24,7 +24,7 @@ server:
     port: "8086"    
     
   https:
-    host: "IN2NPDVJDACON02.dev.corp.local"
+    host: "0.0.0.0"
     port: "8085"
     tls:
       keyStore:
@@ -53,8 +53,8 @@ response:
       connect_src: "\"connect-src 'self' <message-store-url> <liam-authority-url> <liam-scope-url>\""
 
 
-DataBase Config
- MSDatabase:
+# DataBase Config
+MSDatabase:
   # required field should be true if using basic Auth or else false.
   required: "true"
   url: "jdbc:oracle:thin:@in2npdlnxdb10:1521:if19ca"
@@ -91,3 +91,4 @@ MSserver:
         path: "https/keystore.jks"
       trustStore:
         path: "https/truststore.jks"
+        
