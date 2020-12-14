@@ -23,7 +23,7 @@ server:
     port: "8088"    
     
   https:
-    host: "0.0.0.0"
+    host: "in2npdvjdacon02.dev.corp.local"
     port: "8087"
     tls:
       keyStore:
