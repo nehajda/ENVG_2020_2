@@ -14,7 +14,7 @@
         {
           "connectionName": "cpsui00",
           "protocol": "https",
-          "machineAddress": "in2npdvjdacon02.dev.corp.local",
+          "machineAddress": "localhost",
           "portNumber": 9810,
           "apiName": "cps/api",
           "apiVersion": "v1"
