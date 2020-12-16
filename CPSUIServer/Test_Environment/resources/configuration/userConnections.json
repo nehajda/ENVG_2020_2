@@ -7,7 +7,7 @@
           "connectionName": "CPS",
           "protocol": "https",
           "machineAddress": "in2npdvjdacon02.dev.corp.local",
-          "portNumber": 8087,
+          "portNumber": 9810,
           "apiName": "cps/api",
           "apiVersion": "v1"
         },
