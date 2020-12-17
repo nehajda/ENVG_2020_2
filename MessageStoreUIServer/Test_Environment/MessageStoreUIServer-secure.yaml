@@ -1,6 +1,6 @@
 "MSDatabase":
   "user-secure": "{cipher}44d379b20af2cfd71ff1db83f7656a7b01c9cd40d8946467f0ff7306998223e2"
-  "password-secure": "MSGSTR_GOLD_02"
+  "password-secure": "{cipher}7d1ccae2557d274f7f4be85f7c7a520861399c7b7f3435513f8953ccce781d9e"
 "server":
   "https":
     "tls":
