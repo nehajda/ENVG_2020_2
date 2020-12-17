@@ -1,25 +1,21 @@
-MSDatabase:
-  user-secure: "MSGSTR_GOLD_02"
-  password-secure: "MSGSTR_GOLD_02"
-
-server:
-
-  https:
-    tls:
-      keyStore:
-        password-secure: "changeme"
-        key:
-          password-secure: "changeme"
-      trustStore:
-        password-secure: "changeme"
-
-MSserver:
-
-  https:
-    tls:
-      keyStore:
-        password-secure: "changeme"
-        key:
-          password-secure: "changeme"
-      trustStore:
-        password-secure: "changeme"
+"MSDatabase":
+  "user-secure": "{cipher}37ec053e13739414744ca035e2601ed5344e143ee1e20ae2ee3b10cc8b3ffdc2"
+  "password-secure": "MSGSTR_GOLD_02"
+"server":
+  "https":
+    "tls":
+      "keyStore":
+        "password-secure": "changeme"
+        "key":
+          "password-secure": "changeme"
+      "trustStore":
+        "password-secure": "changeme"
+"MSserver":
+  "https":
+    "tls":
+      "keyStore":
+        "password-secure": "changeme"
+        "key":
+          "password-secure": "changeme"
+      "trustStore":
+        "password-secure": "changeme"
