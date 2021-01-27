@@ -67,7 +67,8 @@ inbound:
       flow: 'flow-in-item'
     - message: 'GS1:itemMessage:GS1_JDA 2019.1.0'
       flow: 'flow-in-item'
-      
+    - message: 'GS1:billOfMaterialMessage:GS1_JDA 2020.3.0'
+      flow: 'flow-in-billofMaterial'
 outbound:
   responses:
     - message: 'GS1:TransferOrder:GS1_JDA 2019.1.0'
