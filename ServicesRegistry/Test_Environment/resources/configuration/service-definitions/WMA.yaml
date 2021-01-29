@@ -67,6 +67,12 @@ inbound:
       flow: 'flow-in-item'
     - message: 'GS1:itemMessage:GS1_JDA 2019.1.0'
       flow: 'flow-in-item'
+    - message: 'GS1:itemHierarchyLevelMemberMessage:GS1_JDA 2019.1.0'
+      flow: 'flow-in-itemHierarchy'
+    - message: 'GS1:itemHierarchyLevelMemberMessage:GS1_JDA 2019.1.1'
+      flow: 'flow-in-itemHierarchy'
+    - message: 'GS1:itemHierarchyLevelMemberMessage:GS1_JDA 2020.3.0'
+      flow: 'flow-in-itemHierarchy'
     - message: 'GS1:billOfMaterialMessage:GS1_JDA 2020.2.0'
       flow: 'flow-in-billofMaterial'
       
