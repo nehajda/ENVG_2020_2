@@ -75,6 +75,10 @@ inbound:
       flow: 'flow-in-itemHierarchy'
     - message: 'GS1:billOfMaterialMessage:GS1_JDA 2020.2.0'
       flow: 'flow-in-billofMaterial'
+    - message: 'GS1:workOrderMessage:GS1_JDA 2020.3.0'
+      flow: 'flow-in-workOrder'
+
+      
       
 outbound:
   responses:
