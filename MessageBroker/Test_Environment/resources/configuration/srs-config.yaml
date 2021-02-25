@@ -62,7 +62,7 @@ outboundMappings:
     outboundEndpoint: 'WMA'
   - receiver: 'LOC.V0002'
     request: '*:*:*'
-    outboundEndpoint: 'WMA1'
+    outboundEndpoint: 'WMA'
   - receiver: 'LOC.DICKS'
     request: '*:*:*'
     outboundEndpoint: 'WMA'
