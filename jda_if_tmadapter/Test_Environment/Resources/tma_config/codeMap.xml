@@ -47,7 +47,7 @@
     <code key="GROUND" value="GROUND"/>
     <code key="OVERNIGHT" value="NEXT_DAY_AIR"/>
     <code key="FTL" value="FTL"/>
-    <code key="RAIL" value="RAIL"/>
+     <code key="FCL" value="FCL"/>
   </code-map>
   <code-map name="TransportServiceCategoryCodeFromAppToGS1">
     <code key="TSM_RAIL" value="20"/>
@@ -55,6 +55,7 @@
     <code key="TSM_NULL" value="30"/>
     <code key="TSM_AIR" value="40"/>
     <code key="TSM_OCEAN" value="10"/>
+    <code key="TSM_MARINE" value="10"/>
     <code key="TSM_PARCEL" value="30"/>
     <code key="TSM_TRUCKLOAD" value="30"/>
     <code key="TSM_LTL" value="30"/>
@@ -70,6 +71,7 @@
   </code-map>
   <code-map name="TransportServiceTransitModeFromAppToGS1">
     <code key="FTL" value="2"/>
+    <code key="FCL" value="2"/>
     <code key="3DAY" value="2"/>
     <code key="GROUND" value="3"/>
     <code key="OVERNIGHT" value="3"/>
@@ -333,5 +335,16 @@
     <code key="PA" value="100"/>
     <code key="LA" value="200"/>
     <code key="EA" value="300"/>
+  </code-map>
+  <code-map name="weightUOM">
+	<code key="UMW_LB" value="LBR"/>
+	<code key="UMW_KG" value="KGM"/>
+	<code key="UMW_TN" value="LTN"/>
+	<code key="UMW_MET_T" value="TNE"/>
+  </code-map>
+  <code-map name="volumeUOM">
+    <code key="UML_FT" value="FTQ"/>
+    <code key="UML_INCH" value="INQ"/>
+    <code key="UML_METER" value="MTQ"/>
   </code-map>
 </code-map-configuration>
