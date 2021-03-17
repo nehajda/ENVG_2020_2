@@ -43,4 +43,9 @@
 		<code key="TIME_HELP" value="T" />
 		<code key="ON_HOLD" value="H" />
 	</code-map>
+	<code-map name="transportModeCode" bi-directional="true">
+		<code key="10" value="S" />
+		<code key="30" value="C" />
+		<code key="40" value="A" />
+	</code-map>
 </code-map-configuration>
