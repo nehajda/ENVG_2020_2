@@ -79,8 +79,8 @@ inbound:
       flow: 'flow-in-billofMaterial'
     - message: 'GS1:workOrderMessage:GS1_JDA 2020.3.0'
       flow: 'flow-in-workOrder'
-
-      
+    - message: 'GS1:logisticUnitActivityMessage:GS1_JDA 2021.2.0'
+      flow: 'flow-in-logisticUnitActivity'
       
 outbound:
   responses:
@@ -122,4 +122,3 @@ outbound:
       flow: 'flow-out-warehouseOutboundInstructionMessage'
     - message: 'GS1:applicationReceiptAcknowledgementMessage:GS1_JDA 2019.1.0'
       flow: 'flow-out-applicationReceiptAcknowledgementMessage'
-    
