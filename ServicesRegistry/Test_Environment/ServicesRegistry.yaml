@@ -10,35 +10,16 @@ server:
     #config: "HTTP_Listener_config"
     
   https:
-    host: "in2npdvjdacon02.dev.corp.local"
+    host: "IN2NPDVDCSSV03.dev.corp.local"
     port: "9820"
     tls:
+      context: "TLS_Context"
+      #context: "TLS_Context_with_Trust"
       keyStore:
-        path: "keystore.jks"
-        key:
+        path: "https/keystore.jks"
       trustStore:
-        path: "truststore.jks"
+        path: "https/truststore.jks"
         
   http:
     host: "0.0.0.0"
     port: "9821"
-    
-eframework:
-  applicationId: srs
-  errorReport:
-    enabled: true
-    errorReportPath: ./errorReports
-    title: SRS Error Report
-    htmlTemplatePath: errorReportTemplate.html
-    payload.transaction.size: 2048
-cps:
-  useCps: "true"  # if false then CPS is not called and files are loaded locally
-  cpsBaseUrl: "https://in2npdvjdacon02.dev.corp.local:9810"
-  applicationName: “ServicesRegistry”
-  profiles: "*"
-  version: "*"
-  localMode: "false"
-  localModePath: ""
-  enableCaching: "false"
-  enableFailover: "false"
-  cachingDir: ""
